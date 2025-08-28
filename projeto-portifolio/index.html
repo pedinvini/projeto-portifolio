@@ -1,146 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Equipe formada por estudantes apaixonados por tecnologia, desenvolvimento web e inovação." />
-  
-  <title>Equipe | Estratégia e Tecnologia</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML com JS</title>
+    <link rel="stylesheet" href="./main.css" />
 
-  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-    <script src="assets/js/script.js"></script>
-  <header id="topo">
-    <h1>(NOME DA EQUIPE)</h1>
-    <p>Da gestão ao código: conectando estratégia e tecnologia.</p>
-    <nav id="menu">
-      <button id="menu-toggle" aria-label="Abrir menu">☰</button>
-      <ul id="menu-links">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="sobre">
-    <h2>Sobre a Equipe</h2>
-    <p>
-      Equipe formada por três estudantes universitários de Campina Grande – PB, com experiências em áreas como administração, atendimento e consultoria, atualmente em transição para a área de tecnologia. O grupo é movido pelo interesse em desenvolvimento web, cloud computing, segurança da informação e boas práticas de programação.
-    </p>
-    <div class="membros">
-      <div class="membro">
-        <img src="assets/img/pedro.jpg" alt="Pedro Vinicius" />
-        <h3>Pedro Vinicius</h3>
-        <p><strong>Desenvolvedor Full Stack Júnior</strong></p>
-        <p>Estudante de Sistemas de Informação na Unifacisa. Experiência em administração e consultoria acadêmica. Participou do programa HackaTruck com foco em Swift, IoT e IBM Cloud.</p>
-      </div>
-      <div class="membro">
-        <img src="assets/img/carlos.jpg" alt="Carlos Eduardo Magalhães" />
-        <h3>Carlos Eduardo Magalhães</h3>
-        <p><strong>Desenvolvedor Full Stack Júnior</strong></p>
-        <p>Estudante de Sistemas de Informação na Unifacisa. Foco em linguagens como Java, Python e JavaScript. Experiência anterior na Secretaria de Saúde, com boa comunicação e trabalho em equipe.</p>
-      </div>
-      <div class="membro">
-        <img src="assets/img/guilherme.jpg" alt="Guilherme Henrique" />
-        <h3>Guilherme Henrique</h3>
-        <p><strong>Desenvolvedor Full Stack Júnior</strong></p>
-        <p>Graduando em Ciência da Computação (UFCG) e Sistemas de Informação (Unifacisa). Certificações em Swift, cloud computing e segurança da informação. Experiência com atendimento remoto e suporte administrativo.</p>
-      </div>
+    <div class="container">
+        <h1>Unifacisa Banking</h1>
+        <h2>Depósitos</h2>
+        <form id="document">
+            <input type="text" id ="nome-beneficiario" required placeholder="Nome completo do beneficiário" />
+            <input type="number" id ="numero-da-conta" required placeholder="Número da conta" />
+            <input type="number" id ="valor" required placeholder="Valor" />
+            <textarea placeholder="Descrição (opcional)"></textarea>
+            <button type="submit">Depositar</button>
+        </form>
     </div>
-  </section>
-
-  <section id="skills">
-    <h2>Skills e Stacks</h2>
-    <div class="skills-container">
-      <div>
-        <h3>Tecnologias e Ferramentas</h3>
-        <ul>
-          <li>HTML, CSS, JavaScript</li>
-          <li>Python, Java</li>
-          <li>APIs REST</li>
-          <li>Git e GitHub</li>
-          <li>Scrum</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Soft Skills</h3>
-        <ul>
-          <li>Comunicação clara</li>
-          <li>Proatividade</li>
-          <li>Organização</li>
-          <li>Resolução de problemas</li>
-          <li>Aprendizado contínuo</li>
-          <li>Trabalho em equipe</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Idiomas</h3>
-        <ul>
-          <li>Português: Nativo</li>
-          <li>Inglês: Básico a Intermediário</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section id="projetos">
-    <h2>Projetos e Trabalhos</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>HackaTruck MakerSpace</h3>
-        <p><strong>Pedro Vinicius & Guilherme Henrique</strong></p>
-        <p>Desenvolvimento de app com Swift usando IBM Cloud. Projeto prático de 100h com foco em mobile e nuvem.</p>
-        <a href="#" target="_blank">Ver Projeto</a>
-      </div>
-      <div class="card">
-        <h3>API Java com Python – Projeto Acadêmico</h3>
-        <p><strong>Carlos Eduardo Magalhães</strong></p>
-        <p>API RESTful com Python e Java, para organização de dados e consumo de serviços.</p>
-        <a href="#" target="_blank">Ver Projeto</a>
-      </div>
-    </div>
-  </section>
-  <section id="contato">
-    <h2>Contato</h2>
-    <form id="form-contato">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required />
-
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="mensagem">Mensagem:</label>
-      <textarea id="mensagem" name="mensagem" required></textarea>
-
-      <button type="submit">Enviar</button>
-    </form>
-
-    <div class="contatos">
-      <div>
-        <h3>Pedro Vinicius</h3>
-        <p>Email: pvinicius.470@hotmail.com</p>
-        <p>Telefone: (81) 9 8885-7746</p>
-        <p><a href="#">GitHub</a> | <a href="#">LinkedIn</a></p>
-      </div>
-      <div>
-        <h3>Carlos Eduardo Magalhães</h3>
-        <p>Email: carloseduardobr19@gmail.com</p>
-        <p>Telefone: (83) 9 9815-3147</p>
-        <p><a href="#">GitHub</a> | <a href="#">LinkedIn</a></p>
-      </div>
-      <div>
-        <h3>Guilherme Henrique</h3>
-        <p>Email: guilhermehp30@hotmail.com</p>
-        <p>Telefone: (83) 99606-4852</p>
-        <p><a href="#">GitHub</a> | <a href="#">LinkedIn</a></p>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <p>&copy; 2025 (Nome da Equipe). Todos os direitos reservados.</p>
-  </footer>
-  <a href="#topo" id="voltar-topo" title="Voltar ao topo">↑</a>
+<script src="./main.js"></script>
 </body>
+
 </html>
