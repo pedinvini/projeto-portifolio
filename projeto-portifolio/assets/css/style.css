@@ -5,22 +5,32 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Inter", sans-serif;
   color: white;
-background: #00364d;
-background: linear-gradient(129deg,rgba(0, 54, 77, 1) 0%, rgba(60, 128, 88, 1) 50%, rgba(0, 148, 131, 1) 100%);
+  background: #00364d;
+
+  background: #01D6FF;
+  background: #016BFF;
+  background: #013F95;
+  background: linear-gradient(135deg, #013F95, #070140);
   line-height: 1.6;
 }
+
 a {
   color: #00bcd4;
   text-decoration: none;
   transition: 0.3s;
 }
+
 a:hover {
   color: #26c6da;
 }
-h1, h2, h3 {
+
+h1,
+h2,
+h3 {
   font-weight: 600;
   color: #ffffff;
 }
@@ -31,10 +41,12 @@ header {
   text-align: center;
   border-bottom: 1px solid #333;
 }
+
 header h1 {
   font-size: 2rem;
   margin-bottom: .5rem;
 }
+
 header p {
   color: #aaa;
 }
@@ -42,21 +54,25 @@ header p {
 nav {
   margin-top: 1rem;
 }
+
 #menu-toggle {
   display: none;
 }
+
 #menu-links {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 1.5rem;
 }
+
 #menu-links li a {
   font-weight: 500;
   padding: .5rem 1rem;
   border-radius: 8px;
   transition: background .3s;
 }
+
 #menu-links li a:hover {
   background: #2a2a2a;
 }
@@ -66,6 +82,7 @@ section {
   max-width: 1000px;
   margin: 0 auto;
 }
+
 section h2 {
   text-align: center;
   margin-bottom: 2rem;
@@ -81,13 +98,15 @@ section h2 {
   gap: 1.5rem;
   margin-top: 2rem;
 }
+
 .membro {
   background: #1e1e1e;
   padding: 1.5rem;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   transition: transform .3s;
 }
+
 .membro:hover {
   transform: translateY(-5px);
 }
@@ -97,6 +116,7 @@ section h2 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
 }
+
 .skills-container div {
   background: #1e1e1e;
   padding: 1.5rem;
@@ -104,7 +124,7 @@ section h2 {
 }
 
 .skills-container div:hover {
-  box-shadow: 0 0 30px rgb(255, 255, 255);
+  box-shadow: 0 0 30px #00bcd4;
   transition: transform .3s, box-shadow .5s;
 }
 
@@ -113,17 +133,20 @@ section h2 {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
 }
+
 .card {
   background: #1e1e1e;
   padding: 1.5rem;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   transition: transform .3s, box-shadow .3s;
 }
+
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 20px rgb(255, 255, 255);
+  box-shadow: 0 0 20px #00bcd4;
 }
+
 .card a {
   display: inline-block;
   margin-top: 1rem;
@@ -134,6 +157,7 @@ section h2 {
   border-radius: 8px;
   transition: background .3s;
 }
+
 .card a:hover {
   background: #26c6da;
 }
@@ -147,13 +171,16 @@ form {
   border-radius: 12px;
   margin-bottom: 2rem;
 }
-input, textarea {
+
+input,
+textarea {
   padding: .8rem;
   border: none;
   border-radius: 8px;
   background: #2a2a2a;
   color: #fff;
 }
+
 button {
   padding: .8rem;
   border: none;
@@ -164,6 +191,7 @@ button {
   cursor: pointer;
   transition: background .3s;
 }
+
 button:hover {
   background: #26c6da;
 }
@@ -173,11 +201,11 @@ button:hover {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
 }
+
 .contatos div {
   background: #1e1e1e;
   padding: 1.5rem;
   border-radius: 12px;
-  position: relative;
   top: 70px;
 }
 
@@ -200,13 +228,14 @@ footer {
   font-weight: bold;
   transition: background .3s;
 }
+
 #voltar-topo:hover {
   background: #26c6da;
 }
 
-.mensageSucess{
+.mensageSucess {
   background-color: #26c6da;
-  width: 50% ;
+  width: 50%;
   align-items: center;
   color: #121212;
   font-size: 1.2rem;
@@ -222,9 +251,9 @@ footer {
   bottom: 230px;
 }
 
-.mensageERROR{
+.mensageERROR {
   background-color: #26c6da;
-  width: 50% ;
+  width: 50%;
   align-items: center;
   color: white;
   font-size: 1.2rem;
@@ -239,6 +268,7 @@ footer {
   border: #fff solid 2px;
   bottom: 230px;
 }
+
 #voltar-topo {
   position: fixed;
   bottom: 30px;
