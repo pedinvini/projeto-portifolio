@@ -1,6 +1,3 @@
-/* ======= RESET ======= */
-
-
 * {
   font-family: 'Montserrat', sans-serif;
   font-size: medium;
@@ -28,7 +25,6 @@ h1, h2, h3 {
   color: #ffffff;
 }
 
-/* ======= HEADER ======= */
 header {
   background: #1e1e1e;
   padding: 2rem 1rem;
@@ -42,8 +38,6 @@ header h1 {
 header p {
   color: #aaa;
 }
-
-/* ======= MENU ======= */
 
 nav {
   margin-top: 1rem;
@@ -67,7 +61,6 @@ nav {
   background: #2a2a2a;
 }
 
-/* ======= SECTIONS ======= */
 section {
   padding: 3rem 1rem;
   max-width: 1000px;
@@ -82,7 +75,6 @@ section h2 {
   padding-bottom: .5rem;
 }
 
-/* ======= SOBRE ======= */
 .membros {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -100,7 +92,6 @@ section h2 {
   transform: translateY(-5px);
 }
 
-/* ======= SKILLS ======= */
 .skills-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -117,7 +108,6 @@ section h2 {
   transition: transform .3s, box-shadow .5s;
 }
 
-/* ======= PROJETOS ======= */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -148,7 +138,6 @@ section h2 {
   background: #26c6da;
 }
 
-/* ======= FORM ======= */
 form {
   display: flex;
   flex-direction: column;
@@ -179,7 +168,6 @@ button:hover {
   background: #26c6da;
 }
 
-/* ======= CONTATOS ======= */
 .contatos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -193,7 +181,6 @@ button:hover {
   top: 70px;
 }
 
-/* ======= FOOTER ======= */
 footer {
   background: #1e1e1e;
   padding: 1rem;
@@ -201,7 +188,6 @@ footer {
   border-top: 1px solid #333;
 }
 
-/* ======= VOLTAR AO TOPO ======= */
 #voltar-topo {
   position: fixed;
   bottom: 20px;
@@ -252,4 +238,31 @@ footer {
   border-radius: 15px;
   border: #fff solid 2px;
   bottom: 230px;
+}
+#voltar-topo {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #00bcd4;
+  color: #121212;
+  padding: 0.8rem 1rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, background 0.3s, opacity 0.3s;
+  z-index: 999;
+  display: none;
+  opacity: 0;
+}
+
+#voltar-topo.show {
+  display: block;
+  opacity: 1;
+}
+
+#voltar-topo:hover {
+  background: #26c6da;
+  transform: scale(1.1);
 }
