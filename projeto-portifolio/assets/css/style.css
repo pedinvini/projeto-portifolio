@@ -117,6 +117,16 @@ section h2 {
   gap: 1.5rem;
 }
 
+.foto-membro {
+  position: relative;
+  left: 18%;
+  width: 60%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .skills-container div {
   background: #1e1e1e;
   padding: 1.5rem;
@@ -222,8 +232,8 @@ footer {
   right: 20px;
   background: #00bcd4;
   color: #121212;
-  padding: .8rem 1rem;
-  border-radius: 50%;
+  padding: .5rem 2rem;
+  border-radius: 30%;
   font-size: 1.2rem;
   font-weight: bold;
   transition: background .3s;
@@ -248,7 +258,7 @@ footer {
   padding: 10px;
   border-radius: 15px;
   border: #121212 solid 2px;
-  bottom: 230px;
+  bottom: 10px;
 }
 
 .mensageERROR {
@@ -266,7 +276,7 @@ footer {
   padding: 10px;
   border-radius: 15px;
   border: #fff solid 2px;
-  bottom: 230px;
+  bottom: 10px;
 }
 
 #voltar-topo {
@@ -295,4 +305,12 @@ footer {
 #voltar-topo:hover {
   background: #26c6da;
   transform: scale(1.1);
+}
+.logo {
+  width: 300px;
+  height: 300x;
+  margin-bottom: 30px;
+  background-color: whitesmoke;
+  border-radius: 50%;
+  
 }
